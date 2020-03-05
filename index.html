@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/popup.css">
 
+        <script src="https://unpkg.com/core-js-bundle@3.6.4/minified.js"></script>
+
         <script src="js/libs/jquery.min.js"></script>
 
         <script src="js/libs/zip.min.js"></script>
@@ -21,7 +23,7 @@
 
             document.onreadystatechange = function () {
               if (document.readyState == "complete") {
-                window.reader = ePubReader("./book_0227.epub", {
+                window.reader = ePubReader("./0304_communication.epub", {
                    restore: true,
                  });
               }
