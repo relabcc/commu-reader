@@ -6491,7 +6491,7 @@ var Rendition = function () {
 			view: "iframe",
 			flow: null,
 			layout: null,
-			spread: null,
+			spread: 'none',
 			minSpreadWidth: 800,
 			stylesheet: null,
 			script: null

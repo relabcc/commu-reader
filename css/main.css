@@ -100,11 +100,11 @@ body {
 }
 
 #viewer {
+  width: 80%;
   height: 80%;
-  width: 50%;
-  margin-left: 25%;
+  /* margin-left: 10%; */
   margin: 0 auto;
-  max-width: 799px;
+  max-width: 1250px;
   z-index: 2;
   position: relative;
   overflow: hidden;
@@ -290,7 +290,7 @@ input:-ms-placeholder {
 }
 
 #divider.show {
-  display: none;
+  display: block;
 }
 
 #loader {
