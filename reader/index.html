@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/popup.css">
 
+        <script src="https://unpkg.com/core-js-bundle@3.6.4/minified.js"></script>
+
         <script src="js/libs/jquery.min.js"></script>
 
         <script src="js/libs/zip.min.js"></script>
@@ -21,8 +23,9 @@
 
             document.onreadystatechange = function () {
               if (document.readyState == "complete") {
-                window.reader = ePubReader("./book.epub", {
+                window.reader = ePubReader("./0318_communication.epub", {
                    restore: true,
+                   spread: 'none',
                  });
               }
             };
@@ -80,17 +83,18 @@
 
         <div id="titlebar">
           <div id="opener">
-            <a id="slider" class="icon-menu">Menu</a>
+            <!-- <a id="slider" class="icon-menu">Menu</a> -->
           </div>
           <div id="metainfo">
-            <span id="book-title"></span>
-            <span id="title-seperator">&nbsp;&nbsp;–&nbsp;&nbsp;</span>
-            <span id="chapter-title"></span>
+            <!-- <span id="book-title"></span> -->
+            <!-- <span id="title-seperator">&nbsp;&nbsp;–&nbsp;&nbsp;</span> -->
+            <!-- <span id="chapter-title"></span> -->
+            溝通套圈圈 - 衛生所衛教溝通指南
           </div>
           <div id="title-controls">
-            <a id="bookmark" class="icon-bookmark-empty">Bookmark</a>
-            <a id="setting" class="icon-cog">Settings</a>
-            <a id="fullscreen" class="icon-resize-full">Fullscreen</a>
+            <!-- <a id="bookmark" class="icon-bookmark-empty">Bookmark</a> -->
+            <!-- <a id="setting" class="icon-cog">Settings</a> -->
+            <!-- <a id="fullscreen" class="icon-resize-full">Fullscreen</a> -->
           </div>
         </div>
 
