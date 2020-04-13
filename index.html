@@ -27,6 +27,9 @@
                    restore: true,
                    spread: 'none',
                  });
+                 window.reader.book.ready.then(function() {
+                  window.reader.rendition.display(window.location.hash.slice(1))
+                 })
               }
             };
 
