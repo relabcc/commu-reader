@@ -23,10 +23,17 @@
 
             document.onreadystatechange = function () {
               if (document.readyState == "complete") {
-                window.reader = ePubReader("./0318_communication.epub", {
+                window.reader = ePubReader("./0419_communication.epub", {
                    restore: true,
                    spread: 'none',
                  });
+                 window.reader.book.ready.then(function() {
+                   if (window.location.hash) {
+                    window.reader.rendition.display(window.location.hash.slice(1))
+                   } else {
+                    window.reader.rendition.display(0)
+                   }
+                 })
               }
             };
 
