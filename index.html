@@ -28,7 +28,11 @@
                    spread: 'none',
                  });
                  window.reader.book.ready.then(function() {
-                  window.reader.rendition.display(window.location.hash.slice(1))
+                   if (window.location.hash) {
+                    window.reader.rendition.display(window.location.hash.slice(1))
+                   } else {
+                    window.reader.rendition.display(0)
+                   }
                  })
               }
             };
